@@ -6,5 +6,6 @@ public class Client {
 	public static void main(String[] argv) {
 		Viewer gui = SimpleViewer.getInstance();
 		gui.show();
+		
 	}
 }
