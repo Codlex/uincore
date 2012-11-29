@@ -1,4 +1,7 @@
 package com.codlex.uincore.system.network;
+
+import java.io.Serializable;
+
 /**
  * 
  * Message is elementary object which is sent 
@@ -10,7 +13,9 @@ package com.codlex.uincore.system.network;
  * @author Dejan Pekter deximat@gmail.com
  *
  */
-public interface Message {
+public interface Message extends Serializable {
+	public String getTo();
+	public String getFrom();
 	public int getCode();
 	public String getJSON();
 }
